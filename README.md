@@ -17,7 +17,7 @@ For tonight's lab, we'd like you to create an app for Zoos across the world to d
 	* An Animals belongs to a Zoo
 	* An Animal will have name, photo, and tag fields
 	* The animals have a RESTful URL path, nested under Zoos
-* Users should be able to create, update, and destroy any of the listed Zoos
+* Users should be able to create, update, and destroy any of the listed Animals
 
 ## How to get started
 
