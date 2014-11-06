@@ -4,20 +4,7 @@ For tonight's lab, we'd like you to create an app for Zoos across the world to d
 
 ##User Stories
 
-* Users should not have to Authenticate or Authorize (for now...)
-
-* Users should see an index of registered Zoos on the homepage
- 	* A Zoo has many Animals
-	* A Zoos show page will be the Animals index page
-	* The Zoo have a RESTful URL path
-* Users should be able to create, update and destroy any of the listed Zoos
-	* When a Zoo is destroyed, so are all of its animals
-
-* Users should see all the Animals when they click on a Zoo listing and view their show page
-	* An Animals belongs to a Zoo
-	* An Animal will have name, photo, and tag fields
-	* The animals have a RESTful URL path, nested under Zoos
-* Users should be able to create, update, and destroy any of the listed Animals
+Reference the list of userstories on our shared [Trello board](https://trello.com/b/cRzqvNYD/rails-zoo)
 
 ## How to get started
 
