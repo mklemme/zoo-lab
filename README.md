@@ -1,30 +1,25 @@
 # Rails Zoo Lab
 
-For tonight's lab, we'd like you to create an app for Zoos across the world to display their animals.
-
-A Zoo should be able to have many animals, see all posts and see an individual post. The user should also be able to assign tags to each post and for every post they should be able to create a tag, view all tags, and view all posts by tags.
+For tonight's lab, we'd like you to create an app for Zoos across the world to display their animals. **You may not use rails generate.**
 
 ##User Stories
 
-* Users should not need to login to view our site
+* Users should not have to Authenticate or Authorize
 
 * Users should see an index of registered Zoos on the homepage
-	* A Zoo will be able to register for our site
+ 	* A Zoo has many Animals
+	* A Zoos show page will be the Animals index page
 	* A Zoo will have fields for a username, location, and password
 	* A Zoo will be able to login with their username and password
-	* A Zoo has many Animals
 	* The Zoo have a RESTful URL path
+* Users should be able to create, update and destroy any of the listed Zoos
+	* When a Zoo is destroyed, so are all of its animals
 
-
-
-* Users should see all the Animals when they click on a Zoo listing
-	* An Animal will have name, photo, and tag fields
+* Users should see all the Animals when they click on a Zoo listing and view their show page
 	* An Animals belongs to a Zoo
+	* An Animal will have name, photo, and tag fields
 	* The animals have a RESTful URL path, nested under Zoos
-
-* Users should be able to click on an Animal to see their show page that lists all the animal's information
-
-* Zoos should be able to create their own Animals but not another Zoo's animals
+* Users should be able to create, update, and destroy any of the listed Zoos
 
 ## How to get started
 
@@ -43,11 +38,9 @@ Remeber, you can always look back at notes from this afternoon to help you with 
 
 ## Bonus
 
-1. Add routes and methods to allows Zoos to update an exiting Animal and destroy an Animal
-
-2. Include your own custom styling, bootstrap or another CSS framework in your application and style your blog.
-
-3. Include flash messages to display success and error messages for when a Zoo account is being authorized or authenticated
+1. Include your own custom styling, bootstrap or another CSS framework in your application and style your blog.
+2. Include flash messages to display success and error messages for when a Zoo account is being authorized or authenticated
+3. Include authorization and authentication logic
 
 
 
