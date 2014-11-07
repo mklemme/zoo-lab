@@ -22,7 +22,7 @@ class ZoosController < ApplicationController
 
   def update
     @zoo = Zoo.find(params[:id])
-    @zoo.update_attributes(zoo_params)
+    @zoo.update(zoo_params)
     redirect_to Zoo
   end
 
