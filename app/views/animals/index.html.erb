@@ -1,7 +1,9 @@
-<h1>The animals at: <%= @zoo.name %></h1>
+<h1>Animals at: <%= @zoo.name %></h1>
 
 <ul>
 <% @zoo.animals.each do |animal| %>
   <li><%= animal.name %>
 <% end %>
 </ul>
+
+<a href="animals/new">add a new animal</a>
