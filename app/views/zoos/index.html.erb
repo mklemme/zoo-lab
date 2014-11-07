@@ -1,0 +1,7 @@
+<h1>Zoos</h1>
+
+<ul>
+<% @all.each do |zoo| %>
+  <li><a href="<%=zoo_path(zoo)%>"><%= zoo.name %></a></li>
+<% end %>
+</ul>
