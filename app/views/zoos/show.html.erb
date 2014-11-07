@@ -1,5 +1,5 @@
-<a href="<%=zoos_path%>">< back to all zoos</a>
+<%= link_to "back to all zoos", zoos_path %>
 <h1><%= @zoo.name %></h1>
-<p><%= @zoo.location %> [<a href="/zoos/<%=@zoo.id%>/edit">edit</a>]</p>
+<p><%= @zoo.location %> [<%= link_to "edit", edit_zoo_path %>]</p>
 
-<a href="/zoos/<%=@zoo.id%>/animals">see all animals</a>
+<%= link_to "see all animals", zoo_animals_path(@zoo) %>

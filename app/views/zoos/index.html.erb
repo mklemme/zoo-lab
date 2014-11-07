@@ -2,6 +2,6 @@
 
 <ul>
 <% @all.each do |zoo| %>
-  <li><a href="<%=zoo_path(zoo)%>"><%= zoo.name %></a></li>
+  <li><%= link_to zoo.name, zoo_path(zoo) %></li>
 <% end %>
 </ul>
