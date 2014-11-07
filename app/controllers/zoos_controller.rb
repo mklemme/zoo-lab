@@ -13,7 +13,7 @@ class ZoosController < ApplicationController
     if @zoo.save
       redirect_to @zoo
     else
-      redirect_to zoos_path
+      redirect_to Zoo
     end
   end
 
@@ -25,7 +25,7 @@ class ZoosController < ApplicationController
     edit_zoo = params.require(:zoo).permit(:name, :location)
     @zoo = Zoo.find(params[:id])
     @zoo.update_attributes(edit_zoo)
-    redirect_to zoos_path
+    redirect_to Zoo
   end
 
   def show
