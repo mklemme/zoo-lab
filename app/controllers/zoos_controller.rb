@@ -8,8 +8,7 @@ class ZoosController < ApplicationController
   end
 
   def create
-    new_zoo = params.require(:zoo).permit(:name, :location)
-    @zoo = Zoo.new(new_zoo)
+    @zoo = Zoo.new(zoo_params)
     if @zoo.save
       redirect_to @zoo
     else
@@ -22,13 +21,17 @@ class ZoosController < ApplicationController
   end
 
   def update
-    edit_zoo = params.require(:zoo).permit(:name, :location)
     @zoo = Zoo.find(params[:id])
-    @zoo.update_attributes(edit_zoo)
+    @zoo.update_attributes(zoo_params)
     redirect_to Zoo
   end
 
   def show
     @zoo = Zoo.find(params[:id])
+  end
+
+  private
+  def zoo_params
+    params.require(:zoo).permit(:name, :location)
   end
 end
